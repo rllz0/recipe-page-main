@@ -163,7 +163,7 @@
     body {
       padding: 0;
     }
-    
+    /* For Mobile */
     .container, .ingredients, .instructions, .nutrition {
       padding: 0 16px 15px;
     }
@@ -202,5 +202,24 @@
     
     hr {
       margin: 20px 0;
+    }
+  }
+
+   /* For Desktop */
+  @media screen and (min-width: 1440px) {
+    .container, .ingredients, .instructions, .nutrition {
+      max-width: 800px;
+    }
+    
+    h1 {
+      font-size: 36px;
+    }
+    
+    h2 {
+      font-size: 28px;
+    }
+    
+    .content p, .nutrition p {
+      font-size: 18px;
     }
   }
