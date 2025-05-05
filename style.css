@@ -13,37 +13,36 @@
     background-color: hsl(30, 54%, 90%); 
     color: hsl(30, 10%, 34%);
     padding: 20px;
-    font-size: 16px;
+    font-size: 16px;    
   }
 
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  background-color: hsl(0, 0%, 100%); 
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.image{
-        width: 100%;
-}
 .image img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+  width: 100%;
+ border-radius: 10px;
+}
   
   h1 {
     font-family: 'Young Serif', serif;
     font-size: 32px;
     color: hsl(24, 5%, 18%);
-    margin: 20px 30px;
+    margin: 20px 0;
     font-weight: 400;
   }
 
-  .content, .ingredients, .instructions, .nutrition {
-    padding: 0 30px 20px;
+  .content{
+    padding: 30px 40px;
+
+  }
+  .ingredients, .instructions, .nutrition {
     background-color: hsl(0, 0%, 100%); 
     max-width: 700px;
     margin: 0 auto;
@@ -70,15 +69,15 @@
     margin: 20px 0 15px 0;
     font-weight: 400;
     background-color: hsl(330, 100%, 98%); 
-    padding: 20px;
-    border-radius: 8px;
+    padding: 0;
+    border-radius: 0;
   }
   
   section {
     background-color: hsl(330, 100%, 98%); 
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 30px;
+    
   }
 
   .list {
@@ -159,11 +158,12 @@
     margin-top: 30px;
     color: hsl(30, 10%, 34%); 
   }
+   /* For Mobile */
   @media screen and (max-width: 375px) {
     body {
       padding: 0;
     }
-    /* For Mobile */
+   
     .container, .ingredients, .instructions, .nutrition {
       padding: 0 16px 15px;
     }
